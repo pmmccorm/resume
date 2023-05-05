@@ -1,3 +1,5 @@
+![building](https://github.com/pmmccorm/resume/actions/workflows/static.yml/badge.svg)
+
 Resume Tooling
 ==============
 
