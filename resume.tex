@@ -308,18 +308,18 @@ Senior Software Engineer over a wide range of languages, tooling, and systems. S
 \cvsection{Experience}
 
 \cvevent{11/20 - present}{Software Engineer}{DigitalOcean}
-\cvdetail{Automate kernel build process for continuous integration/deployment. Roll out fleet wide changes for kernel packages and live-patching.}
-\cvdetail{Backport upstream kernel features for hypervisors. Define feature and configuration for fleet hypervisor kernel. Automate testing of kernel and associated hypervisor software.}
-\cvdetail{Design and run benchmarks for SLAs.}
-\cvdetail{Define, manage, and automate Ubuntu based Linux distribution for all cloud infrastructure.}
-\cvdetail{Respond to and resolve incidents and maintain security vulnerability reporting and infrastructure.}
+\cvdetail{Automatized the kernel build process for continuous integration and deployment using git, docker, and github actions, thereby reduincing the build time to 35 minutes instead versus an hours long manual process.}
+\cvdetail{Define and manage the internal package build process for debian packaging. Integrate package status metrics across the fleet with Prometheus and build dashboards with Grafana.}
+\cvdetail{Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure. Decrease deployment time from 24 hours to 1 hourly across fleet of 25000+ hypervisors.}
+\cvdetail{Respond to and resolve incidents and maintain security vulnerability reporting and infrastructure by maintaining a FastAPI powered REST endpoint for correlating CVEs with fleet pacakge versions.}
+\cvdetail{Operate and maintain mirrors.digitalocean.com, a geo-distributed and load balanced APT mirror of Ubuntu and debian package archives enabled on VMs. Maintain 100\% uptime with haproxy, nginx, anf varnish cache.}
 
 \cvevent{4/11 - 11/20}{Software Engineer}{Intel}
 \cvdetail{Develop functional and performance tests for OpenFabrics (OFED) userspace libraries, orchestrate with Google Test framework and integrate with internal automation system.}
 \cvdetail{Backport kernel drivers and feature development for Intel Xeon Phi co-processor RDMA software stack, port build system to Yocto. Maintain release notes, user guide, release process.}
 \cvdetail{Design and implement Buildbot continuous integration and testing automation for internal cluster.}
 \cvdetail{Implemented automation for testing high speed RDMA NICs on clusters with different Linux distributions.}
-\cvdetail{Co-design and develop an FPGA “smart” NIC (ARM v8 based SoC). Design and implement kernel-userspace API and library, kernel memory registration parts, userspace fabric utilities. Continuous integration with Jenkins.}
+\cvdetail{Co-design and develop an FPGA “smart” NIC (ARM v8 based SoC). Design and implement kernel-userspace API and library, kernel memory registration parts, userspace fabric utilities. Continuous integration with Jenkins and Gitlab.}
 \cvdetail{Cloud Computing benchmarking. Run industry standard benchmarks across VM instances and performance analysis on results. Investigate and explain gen-gen and cross-architectural performance differences.}
 
 %---------------------------------------------------------------------------------------------------
