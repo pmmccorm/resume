@@ -19,7 +19,7 @@
   github: github,
   linkedin: linkedin,
   phone: phone,
-  personal-site: personal-site,
+//  personal-site: personal-site,
   accent-color: "#26428b",
   font: "New Computer Modern",
   paper: "us-letter",
@@ -40,87 +40,69 @@
 * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 * #generic-one-by-two(left: "", right: "")
 */
+== Work Experience
+
+#work(
+  title: "Senior Software Engineer",
+  location: "Remote, OR",
+  company: "DigitalOcean",
+  dates: dates-helper(start-date: "Nov 2020", end-date: "Present"),
+)
+- Respond to and resolve incidents (pagerduty). Maintain security vulnerability reporting and infrastructure by creating a REST API (python fastapi) for correlating CVEs with fleet package versions.
+- Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure. Decrease deployment time from 24 hours to 1 hour across fleet of 25000+ hypervisor machines.
+- Redesign and maintain mirrors.digitalocean.com, a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with cloudflare, haproxy and varnish cache.
+- Design and maintain the internal package build process for Debian packaging and deployment (CI/CD with github workflows). Integrate package status metrics across the fleet with Prometheus and build source-controlled dashboards with Grafana and Grafonnet.
+
+#work(
+  title: "Software Engineer",
+  location: "Hillsboro, OR",
+  company: "Intel",
+  dates: dates-helper(start-date: "Apr 2011", end-date: "Nov 2020"),
+)
+- Backport kernel drivers and feature development for Intel Xeon Phi co-processor RDMA software stack, port build system to Yocto. Maintain release notes, user guide, release process.
+- Develop functional and performance tests for OpenFabrics (OFED) userspace libraries, orchestrate with Google Test framework and integrate with internal automation system.
+- Backport kernel drivers and feature development for Intel Xeon Phi co-processor RDMA software stack, port build system to Yocto. Maintain release notes, user guide, release process.
+- Co-design and develop an FPGA “smart” NIC (ARM v8 based SoC). Design and implement kernel-userspace API and library, device memory registration/mapping, userspace fabric utilities. Continuous integration with Jenkins and Gitlab.
+- Cloud benchmarking on OCI, Azure, GCP, AWS. Run industry standard benchmarks across VM instances and performance analysis of results. Investigate and explain gen-gen and cross-architectural performance differences.
+
 == Education
 
 #edu(
   institution: "Portlant State University",
   location: "Portland, OR",
-  dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-  degree: "Bachelor's of Science, Computer Science and Mathematics",
+  dates: dates-helper(start-date: "Sep 2012", end-date: "July 2017"),
+  degree: "Master's of Science, Computer Science",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
-- Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
+- Cumulative GPA: 4.0\/4.0 | Programming Language specialization track
+- Internships: IBM Linux Technology Center (LTC) and Intel
 
-== Work Experience
-
-#work(
-  title: "Subatomic Shepherd and Caffeine Connoisseur",
-  location: "Atomville, CA",
-  company: "Microscopic Circus, Schrodinger's University",
-  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
-)
-- Played God with tiny molecules, making them dance to uncover the secrets of the universe
-- Convinced high-performance computers to work overtime without unions, reducing simulation time by 50%
-- Wowed a room full of nerds with pretty pictures of invisible things and imaginary findings
-
-#work(
-  title: "AI Wrangler and Code Ninja",
-  location: "Silicon Mirage, CA",
-  company: "Organic Stupidity Startup",
-  dates: dates-helper(start-date: "Dec 2023", end-date: "Mar 2024"),
-)
-- Taught robots to predict when (and how much!) humans will empty their wallets at the doctor's office
-- Developed HIPAA-compliant digital signatures, because doctors' handwriting wasn't illegible enough already
-- Turned spaghetti code into a gourmet dish, making other interns drool with envy
-
-#work(
-  title: "Digital Playground Architect",
-  location: "The Cloud",
-  company: "Pixels & Profit Interactive",
-  dates: dates-helper(start-date: "Jun 2020", end-date: "May 2023"),
-)
-- Scaled user base from 10 to 2000+, accidentally becoming a small wealthy nation in the process
-- Crafted Bash scripts so clever they occasionally made other engineers weep with joy
-- Automated support responses, reducing human interaction to a level that would make introverts proud
-- Built a documentation site that actually got read, breaking the ancient RTFM curse
-
-#work(
-  title: "Code Conjurer Intern",
-  location: "Silicon Suburb, CA",
-  company: "Bits & Bytes Consulting",
-  dates: dates-helper(start-date: "Jun 2022", end-date: "Aug 2022"),
-)
-- Developed a cross-platform mobile app that turned every user into a potential paparazzi
-- Led a security overhaul, heroically saving the company from the menace of "password123"
 
 == Projects
 
 #project(
-  name: "Hyperschedule",
+  name: "resume",
   // Role is optional
-  role: "Maintainer",
+  role: "Developer",
   // Dates is optional
-  dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
+  //dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
   // URL is also optional
-  url: "hyperschedule.io",
+  url: "https://github.com/pmmccorm/resume",
 )
-- Maintain open-source scheduler used by 7000+ users at the Claremont Consortium with TypeScript, React and MongoDB
-  - Manage PR reviews, bug fixes, and coordinate with college for releasing scheduling data and over \$1500 of yearly funding
-- Ensure 99.99% uptime during peak loads of 1M daily requests during course registration through redundant servers
+- CI/CD typst resume building and deployment using github actions, docker, typst, and the  github container registry (ghcr.io)
 
-== Extracurricular Activities
+//== Extracurricular Activities
 
-#extracurriculars(
-  activity: "Capture The Flag Competitions",
-  dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
-)
-- Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
-- Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
-  - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
-- Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
+//#extracurriculars(
+//  activity: "Capture The Flag Competitions",
+//  dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
+//)
+//- Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
+//- Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
+//  - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
+//- Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
 
 // #extracurriculars(
 //   activity: "Science Olympiad Volunteering",
@@ -136,5 +118,6 @@
 // )
 
 == Skills
-- *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
-- *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
+- *Programming Languages*: Python, C/C++, Java, Bash, Go, Ruby, Rust, SQL, Make
+- *Technologies*: Git, Github Actions, Linux, Docker, Grafana, Prometheus, Jenkins, Buildbot, Concourse CI/CD, yocto, debian and RPM packaging, Chef, Ansible, Nomad, Terraform, Opentofu, FastAPI, REST APIs
+- *Experience*: Linux kernel build process and device drivers, cross compilation environments, systems level debugging and programming, parallel and socket programming, deploying and integration of large language models (LLMs), developer tooling
