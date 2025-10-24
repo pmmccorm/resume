@@ -18,7 +18,7 @@ FROM ubuntu:noble AS runner
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TYPST_FONT_PATHS=/usr/share/fonts/truetype/
 
-# note install needed fonts here, awesome fonts are not currently used AFAIK
+# install any other fonts desired here
 RUN apt-get update && apt-get install -y fonts-font-awesome ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /root/.cargo/bin/* /usr/bin/
