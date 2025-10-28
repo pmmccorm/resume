@@ -9,8 +9,7 @@ RUN apt-get update && apt-get install -y \
     gcc \
     fonts-font-awesome
 
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup.sh
-RUN chmod +x rustup.sh && ./rustup.sh --profile minimal -y && rm rustup.sh
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain=stable --profile=minimal
 
 RUN . /root/.cargo/env && cargo install typst-cli
 

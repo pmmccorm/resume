@@ -14,7 +14,7 @@ New Computer Modern
 New Computer Modern Math
 ```
 
-And I just wanted to have a wide selection to choose from, managed by the fine Ubuntu packagers, versus having to go and curl a bunch of font tarballs on each build or whatever.
+And I just wanted to have a wide selection to choose from, managed by the fine Ubuntu packagers, versus having to go and curl a bunch of font tarballs on each build or whatever (check the .ttfs into git?).
 
 So I built a mostly version-unlocked container which upon each build will pull in latest stable:
 1. awesomefonts
