@@ -1,6 +1,5 @@
 #import "@preview/basic-resume:0.2.9": *
 
-// Put your personal information here, replacing mine
 #let name = "Patrick McCormick"
 #let location = "Portland, OR"
 #let email = "patm.mail@gmail.com"
@@ -50,7 +49,7 @@
 )
 - Respond to and resolve incidents (pagerduty). Maintain security vulnerability reporting and infrastructure by creating a REST API (python fastapi) for correlating CVEs with fleet package versions.
 - Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure. Decrease deployment time from 24 hours to 1 hour across fleet of 25000+ hypervisor machines.
-- Redesign and maintain mirrors.digitalocean.com, a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with cloudflare, haproxy and varnish cache.
+- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with cloudflare, haproxy and varnish cache.
 - Design and maintain the internal package build process for Debian packaging and deployment (CI/CD with github workflows). Integrate package status metrics across the fleet with Prometheus and build source-controlled dashboards with Grafana and Grafonnet.
 
 #work(
@@ -76,7 +75,7 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 4.0\/4.0 | Programming Language specialization track
+- Programming Language specialization track
 - Internships: IBM Linux Technology Center (LTC) and Intel
 
 
@@ -85,13 +84,26 @@
 #project(
   name: "resume",
   // Role is optional
-  role: "Developer",
+  //role: "Developer",
   // Dates is optional
   //dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
   // URL is also optional
   url: "https://github.com/pmmccorm/resume",
 )
 - CI/CD typst resume building and deployment using github actions, docker, typst, and the  github container registry (ghcr.io)
+- ca1d: one dimensional cellular automata rust implenetation
+
+#project(
+  name: "ca1d",
+  // Role is optional
+  //role: "Developer",
+  // Dates is optional
+  //dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
+  // URL is also optional
+  url: "https://github.com/pmmccorm/ca1d",
+)
+- one dimensional cellular automata in rust
+
 
 //== Extracurricular Activities
 
