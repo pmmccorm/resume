@@ -36,7 +36,7 @@
 */
 == Summary
 
-Infrastructure engineer with 15 years leading new product introductions of server architectures at scale. Technical lead for arm64 and diskless bare-metal hypervisor introductions across a 25000+ machine fleet, spanning hardware bring-up, OS and package delivery, provisioning, and cross-team architecture review across on-premise and multi-cloud (AWS, Azure, GCP, OCI) infrastructure.
+Linux platform engineer with 15 years automating provisioning, configuration, patching, and lifecycle management of large-scale Linux environments. Own the golden image pipeline, package archive, and bare metal provisioning for a 25000+ machine hypervisor fleet running a public cloud, using Terraform, Chef, and Ansible.
 
 == Work Experience
 
@@ -48,7 +48,7 @@ Infrastructure engineer with 15 years leading new product introductions of serve
 )
 - Technical lead for the introduction of arm64 (aarch64) server architecture into the production hypervisor fleet: port and rebuild the package archive for arm64, design and implement bare metal machine provisioning, and prepare and maintain the internal infrastructure OS. Coordinate hardware bring-up and validation across platform, kernel, and datacenter teams.
 - Technical lead for diskless hypervisor product. Architect network-booted bare metal servers using iPXE and NVMe/TCP attached remote storage as root disks. Own the product from RFC and architecture specification through proof-of-concept to production, coordinating design, review, and validation across many teams.
-- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs (Terraform deployed), chef and ansible management). Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
+- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs (Terraform deployed, Chef and Ansible managed). Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
 
 #work(
   title: "Senior Software Engineer",
@@ -91,7 +91,7 @@ Infrastructure engineer with 15 years leading new product introductions of serve
 
 
 == Skills
-- *Infrastructure and Systems*: Bare metal provisioning (PXE/iPXE), arm64/aarch64 enablement, NVMe/TCP storage, RDMA/OpenFabrics, hybrid and multi-cloud (AWS, Azure, GCP, OCI), distributed systems, Linux kernel and device drivers, cross compilation, systems level debugging, large language model (LLM) deployment
+- *Infrastructure and Systems*: Bare metal provisioning (PXE/iPXE), public cloud infrastructure engineering, cloud performance benchmarking (AWS, Azure, GCP, OCI), distributed systems, Linux kernel and device drivers, systems level debugging, fleet patching and vulnerability remediation, AI coding agents for infrastructure automation, large language model (LLM) deployment
 - *Platform and Automation*: Terraform, OpenTofu, Nomad, Chef, Ansible, Docker, Yocto, Debian and RPM packaging, Git, GitHub Actions, Jenkins, Buildbot, Concourse CI/CD
 - *Observability and Services*: Prometheus, Grafana and Grafonnet, HAProxy, Varnish, Cloudflare, FastAPI, REST APIs
 - *Programming Languages*: Python, C/C++, Go, Rust, Bash, SQL
