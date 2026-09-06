@@ -5,6 +5,7 @@ on:
     branches: ["master"]
     paths:
       - "resume.typ"
+      - "index.html"
       - ".github/workflows/static.yml"
   workflow_dispatch:
 
@@ -25,18 +26,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
       - name: convert to pdf
         uses: 'docker://ghcr.io/typst/typst:0.15.1'
         with:
           entrypoint: /bin/typst
           args: 'compile resume.typ'
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
