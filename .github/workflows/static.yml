@@ -12,7 +12,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  packages: read
 
 concurrency:
   group: "pages"
@@ -30,9 +29,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: convert to pdf
-        uses: 'docker://ghcr.io/pmmccorm/typst-cli:latest'
+        uses: 'docker://ghcr.io/typst/typst:0.15.1'
         with:
-          entrypoint: /usr/bin/typst
+          entrypoint: /bin/typst
           args: 'compile resume.typ'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

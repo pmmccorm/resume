@@ -3,24 +3,20 @@
 #let name = "Patrick McCormick"
 #let location = "Portland, OR"
 #let email = "patm.mail@gmail.com"
-#let github = "github.com/pmmccorm"
 #let linkedin = "https://www.linkedin.com/in/patrick-m-mccormick/"
 #let phone = "+1 (503) 351-8195"
-#let personal-site = "github.com/pmmccorm/resume"
 
 #show: resume.with(
   author: name,
   // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
+  // For example, if you want to hide your phone number:
   // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
-//  github: github,
   linkedin: linkedin,
   phone: phone,
-//  personal-site: personal-site,
   accent-color: "#26428b",
-  font: "FontAwesome",
+  font: "Libertinus Serif",
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,
@@ -47,10 +43,10 @@
   company: "DigitalOcean",
   dates: dates-helper(start-date: "Nov 2020", end-date: "Present"),
 )
-- Respond to and resolve incidents (pagerduty). Maintain security vulnerability reporting and infrastructure by creating a REST API (python fastapi) for correlating CVEs with fleet package versions.
+- Respond to and resolve incidents (PagerDuty). Maintain security vulnerability reporting and infrastructure by creating a REST API (Python FastAPI) for correlating CVEs with fleet package versions.
 - Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure. Decrease deployment time from 24 hours to 1 hour across fleet of 25000+ hypervisor machines.
-- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with cloudflare, haproxy and varnish cache.
-- Design and maintain the internal package build process for Debian packaging and deployment (CI/CD with github workflows). Integrate package status metrics across the fleet with Prometheus and build source-controlled dashboards with Grafana and Grafonnet.
+- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
+- Design and maintain the internal package build process for Debian packaging and deployment (CI/CD with GitHub workflows). Integrate package status metrics across the fleet with Prometheus and build source-controlled dashboards with Grafana and Grafonnet.
 
 #work(
   title: "Software Engineer",
@@ -60,17 +56,16 @@
 )
 - Backport kernel drivers and feature development for Intel Xeon Phi co-processor RDMA software stack, port build system to Yocto. Maintain release notes, user guide, release process.
 - Develop functional and performance tests for OpenFabrics (OFED) userspace libraries, orchestrate with Google Test framework and integrate with internal automation system.
-- Backport kernel drivers and feature development for Intel Xeon Phi co-processor RDMA software stack, port build system to Yocto. Maintain release notes, user guide, release process.
-- Co-design and develop an FPGA “smart” NIC (ARM v8 based SoC). Design and implement kernel-userspace API and library, device memory registration/mapping, userspace fabric utilities. Continuous integration with Jenkins and Gitlab.
+- Co-design and develop an FPGA “smart” NIC (ARM v8 based SoC). Design and implement kernel-userspace API and library, device memory registration/mapping, userspace fabric utilities. Continuous integration with Jenkins and GitLab.
 - Cloud benchmarking on OCI, Azure, GCP, AWS. Run industry standard benchmarks across VM instances and performance analysis of results. Investigate and explain gen-gen and cross-architectural performance differences.
 
 == Education
 
 #edu(
-  institution: "Portlant State University",
+  institution: "Portland State University",
   location: "Portland, OR",
   dates: dates-helper(start-date: "Sep 2012", end-date: "July 2017"),
-  degree: "Master's of Science, Computer Science",
+  degree: "Master of Science, Computer Science",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
@@ -90,8 +85,7 @@
   // URL is also optional
   url: "https://github.com/pmmccorm/resume",
 )
-- CI/CD typst resume building and deployment using github actions, docker, typst, and the  github container registry (ghcr.io)
-- ca1d: one dimensional cellular automata rust implenetation
+- CI/CD Typst resume building and deployment using GitHub Actions and GitHub Pages
 
 #project(
   name: "ca1d",
@@ -131,5 +125,5 @@
 
 == Skills
 - *Programming Languages*: Python, C/C++, Java, Bash, Go, Ruby, Rust, SQL, Make
-- *Technologies*: Git, Github Actions, Linux, Docker, Grafana, Prometheus, Jenkins, Buildbot, Concourse CI/CD, yocto, debian and RPM packaging, Chef, Ansible, Nomad, Terraform, Opentofu, FastAPI, REST APIs
+- *Technologies*: Git, GitHub Actions, Linux, Docker, Grafana, Prometheus, Jenkins, Buildbot, Concourse CI/CD, Yocto, Debian and RPM packaging, Chef, Ansible, Nomad, Terraform, OpenTofu, FastAPI, REST APIs
 - *Experience*: Linux kernel build process and device drivers, cross compilation environments, systems level debugging and programming, parallel and socket programming, deploying and integration of large language models (LLMs), developer tooling

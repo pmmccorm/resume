@@ -1,5 +1,7 @@
+TYPST_IMAGE := ghcr.io/typst/typst:0.15.1
+
 resume.pdf: resume.typ
-	docker run -it -v $(PWD):/root ghcr.io/pmmccorm/typst-cli:latest compile /root/$^ /root/$@
+	docker run --rm -v $(PWD):/work -w /work $(TYPST_IMAGE) compile $< $@
 
 .PHONY: clean
 clean:
