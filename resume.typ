@@ -48,7 +48,7 @@ Infrastructure engineer with 15 years leading new product introductions of serve
 )
 - Technical lead for the introduction of arm64 (aarch64) server architecture into the production hypervisor fleet: port and rebuild the package archive for arm64, design and implement bare metal machine provisioning, and prepare and maintain the internal infrastructure OS. Coordinate hardware bring-up and validation across platform, kernel, and datacenter teams.
 - Technical lead for diskless hypervisor product. Architect network-booted bare metal servers using iPXE and NVMe/TCP attached remote storage as root disks. Own the product from RFC and architecture specification through proof-of-concept to production, coordinating design, review, and validation across many teams.
-- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
+- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs (Terraform deployed), chef and ansible management). Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
 
 #work(
   title: "Senior Software Engineer",
@@ -57,7 +57,7 @@ Infrastructure engineer with 15 years leading new product introductions of serve
   dates: dates-helper(start-date: "Nov 2020", end-date: "Jan 2024"),
 )
 - Respond to and resolve incidents (PagerDuty). Maintain security vulnerability reporting and infrastructure by creating a REST API (Python FastAPI) for correlating CVEs with fleet package versions.
-- Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure. Decrease deployment time from 24 hours to 1 hour across fleet of 25000+ hypervisor machines.
+- Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure (debootstrap-based "golden" image pipeline service). Decrease deployment time from 24 hours to 1 hour across fleet of 25000+ hypervisor machines.
 - Design and maintain the internal package build process for Debian packaging and deployment (CI/CD with GitHub workflows). Integrate package status metrics across the fleet with Prometheus and build source-controlled dashboards with Grafana and Grafonnet.
 
 #work(
