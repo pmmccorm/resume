@@ -15,6 +15,7 @@
   phone: phone,
   accent-color: "#26428b",
   font: "Libertinus Serif",
+  font-size: 9.8pt,
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,
@@ -33,6 +34,10 @@
 * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 * #generic-one-by-two(left: "", right: "")
 */
+== Summary
+
+Infrastructure engineer with 15 years leading new product introductions of server architectures at scale. Technical lead for arm64 and diskless bare-metal hypervisor introductions across a 25000+ machine fleet, spanning hardware bring-up, OS and package delivery, provisioning, and cross-team architecture review across on-premise and multi-cloud (AWS, Azure, GCP, OCI) infrastructure.
+
 == Work Experience
 
 #work(
@@ -41,8 +46,8 @@
   company: "DigitalOcean",
   dates: dates-helper(start-date: "Jan 2024", end-date: "Present"),
 )
-- Technical lead for arm64 enablement of hypervisors. Port packages to arm64, design and implement provisioning of bare metal machines, and prepare and maintain the internal infrastructure OS for arm64.
-- Technical lead for diskless hypervisor implementation. Architect diskless hypervisors using iPXE and NVMe/TCP attached storage as root disks. Lead the product from RFC to proof-of-concept to production, coordinating design, review, and validation across many teams.
+- Technical lead for the introduction of arm64 (aarch64) server architecture into the production hypervisor fleet: port and rebuild the package archive for arm64, design and implement bare metal machine provisioning, and prepare and maintain the internal infrastructure OS. Coordinate hardware bring-up and validation across platform, kernel, and datacenter teams.
+- Technical lead for diskless hypervisor product. Architect network-booted bare metal servers using iPXE and NVMe/TCP attached remote storage as root disks. Own the product from RFC and architecture specification through proof-of-concept to production, coordinating design, review, and validation across many teams.
 - Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
 
 #work(
@@ -61,10 +66,9 @@
   company: "Intel",
   dates: dates-helper(start-date: "Apr 2011", end-date: "Nov 2020"),
 )
-- Backport kernel drivers and feature development for Intel Xeon Phi co-processor RDMA software stack, port build system to Yocto. Maintain release notes, user guide, release process.
-- Develop functional and performance tests for OpenFabrics (OFED) userspace libraries, orchestrate with Google Test framework and integrate with internal automation system.
-- Co-design and develop an FPGA “smart” NIC (ARM v8 based SoC). Design and implement kernel-userspace API and library, device memory registration/mapping, userspace fabric utilities. Continuous integration with Jenkins and GitLab.
-- Cloud benchmarking on OCI, Azure, GCP, AWS. Run industry standard benchmarks across VM instances and performance analysis of results. Investigate and explain gen-gen and cross-architectural performance differences.
+- New product introduction of an FPGA “smart” NIC (ARM v8 based SoC). Co-design hardware and software interfaces, implement kernel-userspace API and library, device memory registration/mapping, and userspace fabric utilities. Continuous integration with Jenkins and GitLab.
+- Bring up and maintain the RDMA/OpenFabrics (OFED) HPC fabric software stack for Intel Xeon Phi co-processors. Backport kernel drivers, develop features and automated functional and performance test suites, port build system to Yocto, and own release notes, user guide, and release process.
+- Multi-cloud performance benchmarking across OCI, Azure, GCP, and AWS. Run industry standard benchmarks across VM instances, analyze results, and investigate and explain generational and cross-architectural performance differences.
 
 == Education
 
@@ -77,60 +81,17 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Programming Language specialization track
-- Internships: IBM Linux Technology Center (LTC) and Intel
 
-
-== Projects
-
-#project(
-  name: "resume",
-  // Role is optional
-  //role: "Developer",
-  // Dates is optional
-  //dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
-  // URL is also optional
-  url: "https://github.com/pmmccorm/resume",
+#edu(
+  institution: "Portland State University",
+  location: "Portland, OR",
+  dates: "2009",
+  degree: "Bachelor of Science, Computer Science",
 )
-- CI/CD Typst resume building and deployment using GitHub Actions and GitHub Pages
 
-#project(
-  name: "ca1d",
-  // Role is optional
-  //role: "Developer",
-  // Dates is optional
-  //dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
-  // URL is also optional
-  url: "https://github.com/pmmccorm/ca1d",
-)
-- one dimensional cellular automata in rust
-
-
-//== Extracurricular Activities
-
-//#extracurriculars(
-//  activity: "Capture The Flag Competitions",
-//  dates: dates-helper(start-date: "Jan 2021", end-date: "Present"),
-//)
-//- Founder of Les Amateurs (#link("https://amateurs.team")[amateurs.team]), currently ranked \#4 US, \#33 global on CTFTime (2023: \#4 US, \#42 global)
-//- Organized AmateursCTF 2023 and 2024, with 1000+ teams solving at least one challenge and \$2000+ in cash prizes
-//  - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
-//- Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
-
-// #extracurriculars(
-//   activity: "Science Olympiad Volunteering",
-//   dates: "Sep 2023 --- Present"
-// )
-// - Volunteer and write tests for tournaments, including LA Regionals and SoCal State \@ Caltech
-
-// #certificates(
-//   name: "OSCP",
-//   issuer: "Offensive Security",
-//   // url: "",
-//   date: "Oct 2024",
-// )
 
 == Skills
-- *Programming Languages*: Python, C/C++, Java, Bash, Go, Ruby, Rust, SQL, Make
-- *Technologies*: Git, GitHub Actions, Linux, Docker, Grafana, Prometheus, Jenkins, Buildbot, Concourse CI/CD, Yocto, Debian and RPM packaging, Chef, Ansible, Nomad, Terraform, OpenTofu, FastAPI, REST APIs
-- *Experience*: Linux kernel build process and device drivers, cross compilation environments, systems level debugging and programming, parallel and socket programming, deploying and integration of large language models (LLMs), developer tooling
+- *Infrastructure and Systems*: Bare metal provisioning (PXE/iPXE), arm64/aarch64 enablement, NVMe/TCP storage, RDMA/OpenFabrics, hybrid and multi-cloud (AWS, Azure, GCP, OCI), distributed systems, Linux kernel and device drivers, cross compilation, systems level debugging, large language model (LLM) deployment
+- *Platform and Automation*: Terraform, OpenTofu, Nomad, Chef, Ansible, Docker, Yocto, Debian and RPM packaging, Git, GitHub Actions, Jenkins, Buildbot, Concourse CI/CD
+- *Observability and Services*: Prometheus, Grafana and Grafonnet, HAProxy, Varnish, Cloudflare, FastAPI, REST APIs
+- *Programming Languages*: Python, C/C++, Go, Rust, Bash, SQL
