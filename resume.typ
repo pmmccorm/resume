@@ -3,7 +3,6 @@
 #let name = "Patrick McCormick"
 #let location = "Portland, OR"
 #let email = "patm.mail@gmail.com"
-#let linkedin = "https://www.linkedin.com/in/patrick-m-mccormick/"
 #let phone = "+1 (503) 351-8195"
 
 #show: resume.with(
@@ -13,7 +12,6 @@
   // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
-  linkedin: linkedin,
   phone: phone,
   accent-color: "#26428b",
   font: "Libertinus Serif",
@@ -38,14 +36,23 @@
 == Work Experience
 
 #work(
+  title: "Senior Software Engineer II",
+  location: "Remote, OR",
+  company: "DigitalOcean",
+  dates: dates-helper(start-date: "Jan 2024", end-date: "Present"),
+)
+- Technical lead for arm64 enablement of hypervisors. Port packages to arm64, design and implement provisioning of bare metal machines, and prepare and maintain the internal infrastructure OS for arm64.
+- Technical lead for diskless hypervisor implementation. Architect diskless hypervisors using iPXE and NVMe/TCP attached storage as root disks. Lead the product from RFC to proof-of-concept to production, coordinating design, review, and validation across many teams.
+- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
+
+#work(
   title: "Senior Software Engineer",
   location: "Remote, OR",
   company: "DigitalOcean",
-  dates: dates-helper(start-date: "Nov 2020", end-date: "Present"),
+  dates: dates-helper(start-date: "Nov 2020", end-date: "Jan 2024"),
 )
 - Respond to and resolve incidents (PagerDuty). Maintain security vulnerability reporting and infrastructure by creating a REST API (Python FastAPI) for correlating CVEs with fleet package versions.
 - Define, manage, and automate Ubuntu based Linux distribution for cloud infrastructure. Decrease deployment time from 24 hours to 1 hour across fleet of 25000+ hypervisor machines.
-- Redesign and maintain mirrors.digitalocean.com (50+ million requests/day), a geo-distributed and load balanced APT mirror of Ubuntu and Debian package archives enabled on VMs. Maintain 99.99% uptime with Cloudflare, HAProxy and Varnish cache.
 - Design and maintain the internal package build process for Debian packaging and deployment (CI/CD with GitHub workflows). Integrate package status metrics across the fleet with Prometheus and build source-controlled dashboards with Grafana and Grafonnet.
 
 #work(
